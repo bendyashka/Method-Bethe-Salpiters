@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -23,7 +24,7 @@ int main() {
     
     for (int i = 0; i < n; i++) {
         double r = (b - a) * ((double)rand() / RAND_MAX) + a;  
-        double fr = r * r;  
+        double fr = sin(r);  
         double rfr = r * fr;  
 
         sum += rfr;
